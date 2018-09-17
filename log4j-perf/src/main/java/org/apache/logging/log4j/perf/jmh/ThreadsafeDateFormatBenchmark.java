@@ -132,7 +132,7 @@ public class ThreadsafeDateFormatBenchmark {
         }
     }
 
-    private final long currentTimestamp = 0;
+    private long currentTimestamp = 0;
     private String cachedTime = null;
 
     private final AtomicReference<CachedTimeFastFormat> cachedTimeFastFmt = new AtomicReference<>(new CachedTimeFastFormat(System.currentTimeMillis()));

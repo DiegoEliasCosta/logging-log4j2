@@ -53,8 +53,8 @@ public class LoggerConfigBenchmark {
 
     private final CopyOnWriteArraySet<AppenderControl> appenderSet = new CopyOnWriteArraySet<>();
     private volatile Filter filter = null;
-    private final boolean additive = true;
-    private final boolean includeLocation = true;
+    private boolean additive = true;
+    private boolean includeLocation = true;
     private LoggerConfig parent;
     private final AtomicInteger counter = new AtomicInteger();
     private final AtomicBoolean shutdown = new AtomicBoolean(false);
